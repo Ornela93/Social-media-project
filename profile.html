@@ -13,13 +13,13 @@
     <div class="container container-sm rounded-2 shadow">
         <ul class="nav nav-pills nav-fill">
             <li class="nav-item">
-                <a href="" class="nav-link">Home</a>
+                <a href="index.html" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
-                <a href="profile.html" target="_blank" class="nav-link">Profile</a>
+                <a href="profile.html" class="nav-link">Profile</a>
             </li>
             <li class="nav-item">
-                <a href="" class="nav-link">Messages</a>
+                <a href="messages.html" class="nav-link">Messages</a>
             </li>
             <li class="nav-item">
                 <a href="" class="nav-link">Discover</a>
@@ -55,7 +55,7 @@
         </ul>
     </div>
     <div class="container my-5" id="thumbs">
-<!--         <div class="row">
+        <!--         <div class="row">
             <div class="col-3 p-3">
                 <a href="">
                     <img src="img/girl.jpg" class="img-thumbnail">
@@ -92,23 +92,38 @@
     </div>
 
 
-<script type="text/javascript" src="js/functions.js"></script>
-<script type="text/javascript">
-    var images = [
-        {id: 1, src: 'img/girl.jpg', alt: 'Img 1'},
-        {id: 2, src: 'img/girl.jpg', alt: 'Img 2'},
-        {id: 3, src: 'img/girl.jpg', alt: 'Img 3'},
-        {id: 4, src: 'img/girl.jpg', alt: 'Img 4'},
-    ];
+    <script type="text/javascript" src="js/functions.js"></script>
+    <script type="text/javascript">
+        var images = [{
+                id: 1,
+                src: 'img/girl.jpg',
+                alt: 'Img 1'
+            },
+            {
+                id: 2,
+                src: 'img/girl.jpg',
+                alt: 'Img 2'
+            },
+            {
+                id: 3,
+                src: 'img/girl.jpg',
+                alt: 'Img 3'
+            },
+            {
+                id: 4,
+                src: 'img/girl.jpg',
+                alt: 'Img 4'
+            },
+        ];
 
-    //var thumbs = document.getElementByClassName("thumbs"); // !!! kjo kthen array me elementet qe kane kete class --- thumbs[0].innerHTML = 'aaaa';
-    var thumbs = document.getElementById("thumbs");
-    
-    thumbs.innerHTML = calculateContent(images);
+        //var thumbs = document.getElementByClassName("thumbs"); // !!! kjo kthen array me elementet qe kane kete class --- thumbs[0].innerHTML = 'aaaa';
+        var thumbs = document.getElementById("thumbs");
 
-    thumbs.style.background = 'red'; // js changing css on-the-fly
-    thumbs.className += " bg-primary";
-</script>
+        thumbs.innerHTML = calculateContent(images);
+
+        thumbs.style.background = 'red'; // js changing css on-the-fly
+        thumbs.className += " bg-primary";
+    </script>
 </body>
 
 </html>
